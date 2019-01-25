@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_doll_height_reg"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_small"
+            android:src="@drawable/img_doll_profile" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_vsmall"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/space_vsmall"
+            app:cardElevation="@dimen/space_tiny"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/linWalletCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_vsmall">
+
+                    <ImageView
+                        android:id="@+id/imgIcon"
+                        android:layout_width="@dimen/space_5xlarge"
+                        android:layout_height="@dimen/space_5xlarge"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_wallet" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/space_vsmall"
+                        android:layout_marginRight="@dimen/space_vsmall"
+                        android:layout_toLeftOf="@+id/imgDropDown"
+                        android:layout_toRightOf="@id/imgIcon"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_vsmall">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Total Wallet Value"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_xmedium"
+                            app:font_type_opensans="bold" />
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtWalletCredits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:textColor="@color/color_red"
+                            android:textSize="@dimen/text_xmedium"
+                            app:font_type_opensans="bold" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgDropDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/space_vsmall"
+                        android:src="@drawable/img_drop_down" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linWalletDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_vsmall"
+                    android:layout_marginRight="@dimen/space_vsmall"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_vsmall">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:inputType="text"
+                            android:text="Recharge Credits"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/text_medium"
+                            app:font_type_opensans="regular" />
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtRechargeAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_small"
+                            android:layout_weight="0.8"
+                            android:gravity="right"
+                            android:inputType="text"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_xmedium"
+                            app:font_type_opensans="regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_vsmall">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:inputType="text"
+                            android:text="Cashback Credits"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/text_medium"
+                            app:font_type_opensans="regular" />
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtReferralAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_small"
+                            android:layout_weight="0.8"
+                            android:gravity="right"
+                            android:inputType="text"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_xmedium"
+                            app:font_type_opensans="regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_xsmall"
+            android:background="@drawable/corners_solid_app"
+            android:gravity="center"
+            android:inputType="text"
+            android:longClickable="false"
+            android:padding="@dimen/space_vsmall"
+            android:text="Recharge"
+            android:textColor="@color/color_white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:visibility="visible"
+            app:font_type_opensans="semibold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_vsmall"
+            app:cardCornerRadius="@dimen/space_vsmall"
+            app:cardElevation="@dimen/space_tiny"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtProfileInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_medium"
+                    android:singleLine="true"
+                    android:text="@string/profile_information"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_text" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtDeliveryHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_medium"
+                    android:singleLine="true"
+                    android:text="@string/delivery_history"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    android:visibility="visible"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_text"
+                    android:visibility="visible" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtReferAndEarn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_medium"
+                    android:singleLine="true"
+                    android:text="@string/refer_and_earn"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:id="@+id/viewRef"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_text" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_medium"
+                    android:singleLine="true"
+                    android:text="@string/wallet_usage_and_payment_history"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_text" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_medium"
+                    android:singleLine="true"
+                    android:text="@string/feedback_and_support"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_text" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_medium"
+                    android:singleLine="true"
+                    android:text="@string/logout"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

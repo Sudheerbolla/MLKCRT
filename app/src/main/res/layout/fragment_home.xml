@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="No Data found at this time. Please try again later"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium"
+        android:visibility="gone"
+        app:font_type_opensans="regular" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sVContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.godavarisandroid.mystore.views.AutoScrollViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_10xlarge"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/pageIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/viewPager"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/space_vsmall"
+                    app:piv_animationType="swap"
+                    app:piv_viewPager="@id/viewPager" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgAd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10xlarge"
+                android:scaleType="fitXY"
+                android:visibility="gone">
+
+                <requestFocus />
+            </ImageView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginRight="@dimen/space_vsmall"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtNotificationOne"
+                        android:layout_width="@dimen/space_15xlarge"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_vsmall"
+                        android:background="@drawable/border_lite_white"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:paddingBottom="@dimen/space_small"
+                        android:paddingLeft="@dimen/space_vsmall"
+                        android:paddingRight="@dimen/space_vsmall"
+                        android:paddingTop="@dimen/space_small"
+                        android:text="You have "
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/text_medium"
+                        app:font_type_opensans="regular" />
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtNotificationTwo"
+                        android:layout_width="@dimen/space_15xlarge"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_vsmall"
+                        android:background="@drawable/border_lite_white"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:paddingBottom="@dimen/space_small"
+                        android:paddingLeft="@dimen/space_vsmall"
+                        android:paddingRight="@dimen/space_vsmall"
+                        android:paddingTop="@dimen/space_small"
+                        android:text="You have subscribed for 3 products"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/text_medium"
+                        app:font_type_opensans="regular" />
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtNotificationThree"
+                        android:layout_width="@dimen/space_15xlarge"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_vsmall"
+                        android:background="@drawable/border_lite_white"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:paddingBottom="@dimen/space_small"
+                        android:paddingLeft="@dimen/space_vsmall"
+                        android:paddingRight="@dimen/space_vsmall"
+                        android:paddingTop="@dimen/space_small"
+                        android:text="You have subscribed for 3 products"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/text_medium"
+                        app:font_type_opensans="regular" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

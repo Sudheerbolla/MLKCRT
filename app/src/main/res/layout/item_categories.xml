@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_vsmall"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_7xlarge"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/border_lite_white"
+        android:paddingLeft="@dimen/space_small"
+        android:paddingRight="@dimen/space_small">
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="@dimen/item_categories_size"
+            android:layout_height="@dimen/item_categories_size"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/space_vsmall"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_toRightOf="@+id/imgCategory"
+            android:drawableRight="@drawable/img_drop_down"
+            android:text="Liquids"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_xmedium"
+            app:font_type_opensans="regular" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_vsmall"
+        android:layout_marginTop="@dimen/space_small"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_vsmall"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="No sub categories were found"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium"
+        android:visibility="gone"
+        app:font_type_opensans="regular" />
+</LinearLayout>

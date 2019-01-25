@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_xxxlarge"
+        android:background="@color/app_color"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_xmedium"
+        app:font_type_opensans="regular" />
+
+    <RelativeLayout
+        android:id="@+id/rlNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginBottom="@dimen/space_7xlarge"
+        android:layout_marginTop="@dimen/space_7xlarge"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/txtContent"
+            android:layout_gravity="center"
+            android:src="@drawable/img_doll_search" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sorry we couldn't find\nany records here!!!"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_large"
+            app:font_type_opensans="regular" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <!--<com.godavarisandroid.mystore.views.OpensansTextView-->
+                <!--android:id="@+id/txtAddProduct"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="@dimen/space_small"-->
+                <!--android:background="@drawable/border_corners_app_solid_app"-->
+                <!--android:ems="6"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="text"-->
+                <!--android:padding="@dimen/space_small"-->
+                <!--android:text="Add Product"-->
+                <!--android:textColor="@color/app_color"-->
+                <!--android:textSize="@dimen/text_xmedium"-->
+                <!--app:font_type_opensans="regular" />-->
+
+                <!--<com.godavarisandroid.mystore.views.OpensansTextView-->
+                <!--android:id="@+id/txtModify"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="@dimen/space_small"-->
+                <!--android:layout_marginTop="@dimen/space_small"-->
+                <!--android:background="@drawable/corners_app_solid_app"-->
+                <!--android:ems="5"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="text"-->
+                <!--android:padding="@dimen/space_small"-->
+                <!--android:text="Modify"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:textSize="@dimen/text_xmedium"-->
+                <!--android:visibility="visible"-->
+                <!--app:font_type_opensans="regular" />-->
+
+                <LinearLayout
+                    android:id="@+id/llBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_medium"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtModify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/space_vsmall"
+                        android:background="@drawable/corners_app_solid_app"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:padding="@dimen/space_xsmall"
+                        android:text="Modify"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/text_xmedium"
+                        android:visibility="visible"
+                        app:font_type_opensans="regular" />
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtAddProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_vsmall"
+                        android:background="@drawable/border_corners_app_solid_app"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:padding="@dimen/space_xsmall"
+                        android:text="Add Product"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_xmedium"
+                        android:visibility="visible"
+                        app:font_type_opensans="regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

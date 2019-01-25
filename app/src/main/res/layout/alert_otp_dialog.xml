@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/color_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
+        android:orientation="vertical">
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_small"
+            android:text="Enter Confirmation Code"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_xmedium"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please enter the 4 digit OTP pin as received on your given mobile number"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_xxxlarge"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_5xlarge"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansEditText
+                    android:id="@+id/edtPinOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_xlarge"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/space_vsmall"
+                    android:background="@color/color_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_5xlarge"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_small"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansEditText
+                    android:id="@+id/edtPinTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_xlarge"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/space_vsmall"
+                    android:background="@color/color_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_5xlarge"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_small"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansEditText
+                    android:id="@+id/edtPinThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_xlarge"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/space_vsmall"
+                    android:background="@color/color_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_5xlarge"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_small"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansEditText
+                    android:id="@+id/edtPinFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_xlarge"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/space_vsmall"
+                    android:background="@color/color_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:gravity="center">
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_small"
+                android:layout_marginTop="@dimen/space_small"
+                android:background="@drawable/corners_app_solid_app"
+                android:ems="5"
+                android:gravity="center"
+                android:padding="@dimen/space_xsmall"
+                android:text="Verify"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_large"
+                app:font_type_opensans="regular" />
+        </RelativeLayout>
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtWrongNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_xmedium"
+            android:text="Wrong Number?"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_small"
+            android:layout_marginTop="@dimen/space_xmedium"
+            android:text="Resend Via Call (00:59)"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MilkCart</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="calendar">Calendar</string>
+
+    <string name="pls_check_internet">Please check your internet connection and try again later</string>
+    <string name="delivery_history">Delivery History</string>
+    <string name="refer_and_earn">Refer and Earn</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="wallet_usage_and_payment_history">Wallet, Usage and Payment History</string>
+    <string name="feedback_and_support">Feedback and Support</string>
+    <string name="logout">Logout</string>
+    <string name="request_collection">Request Collection</string>
+    <string name="pay_online">Pay Online</string>
+</resources>

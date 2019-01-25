@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/llFeedback"
+    android:padding="@dimen/space_vsmall">
+
+    <ImageView
+        android:id="@+id/imgCheckBox"
+        android:layout_width="@dimen/space_xxlarge"
+        android:layout_height="@dimen/space_xxlarge"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/space_vsmall"
+        android:src="@drawable/img_checkbox_unselect" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_small"
+        android:text="Didn't get my delivery"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_xmedium"
+        app:font_type_opensans="regular" />
+</LinearLayout>

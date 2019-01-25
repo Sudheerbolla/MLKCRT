@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space_small"
+            android:visibility="visible">
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Issue"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="semibold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llOtherDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xmedium"
+                    android:text="Details"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="semibold" />
+
+                <com.godavarisandroid.mystore.views.OpensansEditText
+                    android:id="@+id/edtMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:background="@drawable/border_text_color"
+                    android:gravity="top"
+                    android:hint="User Message"
+                    android:maxLength="600"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:padding="@dimen/space_vsmall"
+                    android:textColor="@color/color_text"
+                    android:textColorHint="@color/color_dark_grey"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+            </LinearLayout>
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/space_small"
+                android:layout_marginTop="@dimen/space_medium"
+                android:background="@drawable/corners_app_solid_app"
+                android:ems="6"
+                android:gravity="center"
+                android:padding="@dimen/space_small"
+                android:text="Submit"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

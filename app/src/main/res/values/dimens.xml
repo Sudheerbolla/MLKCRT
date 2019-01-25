@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--space-dimen-->
+    <dimen name="space_vtiny">1dp</dimen>
+    <dimen name="space_tiny">2dp</dimen>
+    <dimen name="space_vsmall">5dp</dimen>
+    <dimen name="space_xsmall">8dp</dimen>
+    <dimen name="space_small">10dp</dimen>
+    <dimen name="twelve_dp">12dp</dimen>
+    <dimen name="space_medium">15dp</dimen>
+    <dimen name="space_xmedium">20dp</dimen>
+    <dimen name="space_large">25dp</dimen>
+    <dimen name="space_xlarge">30dp</dimen>
+    <dimen name="space_xxlarge">35dp</dimen>
+    <dimen name="space_xxxlarge">40dp</dimen>
+    <dimen name="space_4xlarge">45dp</dimen>
+    <dimen name="space_5xlarge">50dp</dimen>
+    <dimen name="space_6xlarge">60dp</dimen>
+    <dimen name="space_7xlarge">70dp</dimen>
+    <dimen name="space_8xlarge">80dp</dimen>
+    <dimen name="space_9xlarge">90dp</dimen>
+    <dimen name="space_10xlarge">100dp</dimen>
+    <dimen name="space_11xlarge">110dp</dimen>
+    <dimen name="space_12xlarge">120dp</dimen>
+    <dimen name="space_15xlarge">150dp</dimen>
+
+    <!--text-size-->
+    <dimen name="text_vtiny">2sp</dimen>
+    <dimen name="text_tiny">4sp</dimen>
+    <dimen name="text_vsmall">5sp</dimen>
+    <dimen name="text_vvsmall">8sp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_xsmall">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_xmedium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">20sp</dimen>
+    <dimen name="text_xxlarge">22sp</dimen>
+    <dimen name="text_xxxlarge">24sp</dimen>
+
+    <dimen name="bottom_bar_height">55dp</dimen>
+    <dimen name="splash_logo_height">200dp</dimen>
+    <dimen name="calender_height">220dp</dimen>
+    <dimen name="product_image_size">65dp</dimen>
+    <dimen name="item_categories_size">55dp</dimen>
+    <dimen name="item_delivery_size">60dp</dimen>
+</resources>

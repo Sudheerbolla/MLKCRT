@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_vsmall"
+    android:orientation="vertical">
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgCategory"
+        android:background="@drawable/border_lite_white"
+        android:drawablePadding="@dimen/space_vsmall"
+        android:drawableRight="@drawable/img_drop_down"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:padding="@dimen/space_xsmall"
+        android:text="Usage History per calender month of 4 months"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/text_medium"
+        app:font_type_opensans="regular" />
+
+    <LinearLayout
+        android:id="@+id/llDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llDetailsInner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>

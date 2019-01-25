@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "889763029081",
+    "firebase_url": "https://milkcart-d167b.firebaseio.com",
+    "project_id": "milkcart-d167b",
+    "storage_bucket": "milkcart-d167b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889763029081:android:75419a321ca4ba81",
+        "android_client_info": {
+          "package_name": "com.milkcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889763029081-544l5nu0ndegu5eg17g2h92u0tifq7e5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.milkcart",
+            "certificate_hash": "fc3a4c73dbf1fa9977bfc4968bd91aef0658ecb6"
+          }
+        },
+        {
+          "client_id": "889763029081-g36ruj4dgn31fdorgrpss3a0bibvm4h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5qlKO5ZYaKfgLvysTjPKkhcaaXsJOs58"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889763029081-g36ruj4dgn31fdorgrpss3a0bibvm4h9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "889763029081-emi6m328j06eqi4fg70lpf0g1i61hcmm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.milkcart"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

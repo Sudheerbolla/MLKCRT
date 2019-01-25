@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_6xlarge"
+        android:layout_marginTop="@dimen/space_medium"
+        android:text="Name"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium"
+        app:font_type_opensans="regular" />
+
+    <com.godavarisandroid.mystore.views.OpensansEditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_xmedium"
+        android:layout_marginRight="@dimen/space_xmedium"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:background="@null"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawableLeft="@drawable/img_name_app"
+        android:drawablePadding="@dimen/space_small"
+        android:inputType="textCapWords"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/text_xmedium"
+        app:font_type_opensans="regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/space_xmedium"
+        android:layout_marginRight="@dimen/space_xmedium"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:background="@color/app_color" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_6xlarge"
+        android:layout_marginTop="@dimen/space_medium"
+        android:text="Email"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium"
+        app:font_type_opensans="regular" />
+
+    <com.godavarisandroid.mystore.views.OpensansEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_xmedium"
+        android:layout_marginRight="@dimen/space_xmedium"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:background="@null"
+        android:drawableLeft="@drawable/img_email_app"
+        android:drawablePadding="@dimen/space_small"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/text_xmedium"
+        app:font_type_opensans="regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/space_xmedium"
+        android:layout_marginRight="@dimen/space_xmedium"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:background="@color/app_color" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_6xlarge"
+        android:layout_marginTop="@dimen/space_medium"
+        android:text="Mobile Number"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium"
+        app:font_type_opensans="regular" />
+
+    <com.godavarisandroid.mystore.views.OpensansEditText
+        android:id="@+id/edtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_xmedium"
+        android:layout_marginRight="@dimen/space_xmedium"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:background="@null"
+        android:drawableLeft="@drawable/img_mobile_app"
+        android:drawablePadding="@dimen/space_small"
+        android:gravity="center_vertical"
+        android:inputType="numberPassword"
+        android:maxLength="10"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/text_xmedium"
+        app:font_type_opensans="regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/space_xmedium"
+        android:layout_marginRight="@dimen/space_xmedium"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:background="@color/app_color" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/space_small"
+        android:layout_marginTop="@dimen/space_medium"
+        android:background="@drawable/corners_app_solid_app"
+        android:ems="5"
+        android:gravity="center"
+        android:padding="@dimen/space_small"
+        android:text="Save"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_xmedium"
+        app:font_type_opensans="regular" />
+</LinearLayout>

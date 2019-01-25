@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.godavarisandroid.mystore.utils.calenderutils.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_medium"
+                android:layout_marginRight="@dimen/space_medium"
+                app:mcv_selectionColor="@color/app_color"
+                app:mcv_tileHeight="35dp"
+                app:mcv_tileWidth="45dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_xsmall"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_vsmall"
+        android:paddingTop="@dimen/space_vsmall"
+        android:visibility="visible">
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtModify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/space_vsmall"
+            android:background="@drawable/corners_app_solid_app"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="text"
+            android:padding="@dimen/space_xsmall"
+            android:text="Modify"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_xmedium"
+            android:visibility="visible"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_vsmall"
+            android:background="@drawable/border_corners_app_solid_app"
+            android:ems="6"
+            android:gravity="center"
+            android:inputType="text"
+            android:padding="@dimen/space_xsmall"
+            android:text="Add Product"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_xmedium"
+            android:visibility="visible"
+            app:font_type_opensans="regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

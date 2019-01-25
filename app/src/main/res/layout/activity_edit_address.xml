@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="City"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_city_app"
+                android:drawablePadding="@dimen/space_small"
+                android:drawableRight="@drawable/img_drop"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Area"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_area_app"
+                android:drawablePadding="@dimen/space_small"
+                android:drawableRight="@drawable/img_drop"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Apartment/Society"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansAutoCompleteEditText
+                android:id="@+id/edtApartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_apartment_app"
+                android:drawablePadding="@dimen/space_small"
+                android:drawableRight="@drawable/img_drop"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Block"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_apartment_app"
+                android:drawablePadding="@dimen/space_small"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Flat*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_flat_app"
+                android:drawablePadding="@dimen/space_small"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Street*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_street_app"
+                android:drawablePadding="@dimen/space_small"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Landmark*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_landmark_app"
+                android:drawablePadding="@dimen/space_small"
+                android:inputType="text"
+                android:maxLength="200"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_6xlarge"
+                android:layout_marginTop="@dimen/space_medium"
+                android:text="Pincode*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansEditText
+                android:id="@+id/edtPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_xlarge"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@null"
+                android:drawableLeft="@drawable/img_pincode_app"
+                android:drawablePadding="@dimen/space_small"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/app_color"
+                android:textColorHint="@color/app_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space_xmedium"
+                android:layout_marginRight="@dimen/space_xmedium"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:background="@color/app_color" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/space_small"
+                android:layout_marginTop="@dimen/space_medium"
+                android:background="@drawable/corners_app_solid_app"
+                android:ems="5"
+                android:gravity="center"
+                android:padding="@dimen/space_small"
+                android:text="Save"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

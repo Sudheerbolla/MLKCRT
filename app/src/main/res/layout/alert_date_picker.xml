@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xmedium"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_small"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_xxlarge"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="Start Date"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xsmall"
+                    app:font_type_opensans="regular" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_vsmall"
+                    android:drawableLeft="@drawable/img_calender_app"
+                    android:drawablePadding="@dimen/space_vsmall"
+                    android:drawableRight="@drawable/img_drop"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/space_small"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_medium"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_small"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_xxlarge"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="End Date"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xsmall"
+                    app:font_type_opensans="regular" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_vsmall"
+                    android:drawableLeft="@drawable/img_calender_app"
+                    android:drawablePadding="@dimen/space_vsmall"
+                    android:drawableRight="@drawable/img_drop"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/space_small"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_medium"
+                    app:font_type_opensans="regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_small"
+            android:layout_marginTop="@dimen/space_large"
+            android:background="@drawable/corners_app_solid_app"
+            android:ems="5"
+            android:gravity="center"
+            android:padding="@dimen/space_small"
+            android:text="Save"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_xmedium"
+            app:font_type_opensans="regular" />
+    </LinearLayout>
+</RelativeLayout>

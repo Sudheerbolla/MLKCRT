@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="No Data found at this time. Please try again later"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium"
+        android:visibility="gone"
+        app:font_type_opensans="regular" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sVContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/me_doll_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_small"
+                android:src="@drawable/img_doll_wallet" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_vsmall"
+                android:background="@drawable/border_lite_white"
+                android:orientation="vertical">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_vsmall"
+                    android:text="Total Wallet Value"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:id="@+id/txtWalletValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_vsmall"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+            </LinearLayout>
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtUsageHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/space_vsmall"
+                android:layout_toRightOf="@+id/imgCategory"
+                android:background="@drawable/border_lite_white"
+                android:drawablePadding="@dimen/space_vsmall"
+                android:drawableRight="@drawable/img_drop_down"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/space_medium"
+                android:text="Usage History per calender month of 4 months"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rVUsageHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space_vsmall"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtUsageContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space_vsmall"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="No usage history was found"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                android:visibility="gone"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtPaymentHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/space_vsmall"
+                android:layout_toRightOf="@+id/imgCategory"
+                android:background="@drawable/border_lite_white"
+                android:drawablePadding="@dimen/space_vsmall"
+                android:drawableRight="@drawable/img_drop_down"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/space_medium"
+                android:text="Last 6 Payment History"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rVPaymentHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space_vsmall"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtPaymentContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space_vsmall"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="No payment history was found"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                android:visibility="gone"
+                app:font_type_opensans="regular" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginBottom="@dimen/space_7xlarge"
+        android:layout_marginTop="@dimen/space_7xlarge"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/txtContent"
+            android:layout_gravity="center"
+            android:src="@drawable/img_doll_search" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sorry we couldn't find\nany records here!!!"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_large"
+            app:font_type_opensans="regular" />
+    </RelativeLayout>
+
+</LinearLayout>

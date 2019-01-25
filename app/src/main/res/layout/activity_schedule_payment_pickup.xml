@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xmedium" />
+
+            <LinearLayout
+                android:id="@+id/linWallet1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_vsmall"
+                    app:cardCornerRadius="@dimen/space_vsmall"
+                    app:cardElevation="@dimen/space_tiny"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/linWalletCredits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/space_vsmall">
+
+                            <ImageView
+                                android:layout_width="@dimen/space_7xlarge"
+                                android:layout_height="@dimen/space_7xlarge"
+                                android:padding="@dimen/space_medium"
+                                android:src="@drawable/ic_wallet" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:inputType="text"
+                                    android:text="Total Wallet Value "
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txtWalletCredits"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:inputType="text"
+                                    android:padding="@dimen/space_vsmall"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textSize="@dimen/text_xlarge"
+                                    app:font_type_opensans="semibold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linWalletDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_vsmall"
+                            android:layout_marginRight="@dimen/space_vsmall"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/color_text" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/space_vsmall">
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.2"
+                                    android:inputType="text"
+                                    android:text="Recharge Credits"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_medium"
+                                    app:font_type_opensans="semibold" />
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txtRechargeAmount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/space_small"
+                                    android:layout_weight="0.8"
+                                    android:inputType="text"
+                                    android:text="500"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/color_text" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/space_vsmall">
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.2"
+                                    android:inputType="text"
+                                    android:text="Cashback Credits"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_medium"
+                                    app:font_type_opensans="semibold" />
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txtReferralAmount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/space_small"
+                                    android:layout_weight="0.8"
+                                    android:inputType="text"
+                                    android:text="200"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_vsmall"
+                    app:cardCornerRadius="@dimen/space_vsmall"
+                    app:cardElevation="@dimen/space_tiny"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_medium"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_xsmall">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:text="Topup your account"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_xmedium"
+                            app:font_type_opensans="semibold" />
+
+                        <LinearLayout
+                            android:id="@+id/linPrepaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.godavarisandroid.mystore.views.OpensansEditText
+                                android:id="@+id/edtTopUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:padding="@dimen/space_small"
+                                android:textColor="@color/app_color"
+                                android:textSize="@dimen/text_xlarge"
+                                app:font_type_opensans="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1.5dp"
+                                android:background="@color/color_black" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_xsmall"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txt250"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space_tiny"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_app_color"
+                                    android:gravity="center"
+                                    android:padding="@dimen/space_vsmall"
+                                    android:text="250"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txt500"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space_tiny"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_app_color"
+                                    android:gravity="center"
+                                    android:padding="@dimen/space_vsmall"
+                                    android:text="500"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txt1000"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space_tiny"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_app_color"
+                                    android:gravity="center"
+                                    android:padding="@dimen/space_vsmall"
+                                    android:text="1000"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                                <com.godavarisandroid.mystore.views.OpensansTextView
+                                    android:id="@+id/txt1500"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space_tiny"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_app_color"
+                                    android:gravity="center"
+                                    android:padding="@dimen/space_vsmall"
+                                    android:text="1500"
+                                    android:textColor="@color/app_color"
+                                    android:textSize="@dimen/text_xmedium"
+                                    app:font_type_opensans="semibold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linPostPaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_tiny"
+                            android:layout_marginTop="@dimen/space_vsmall"
+                            android:layout_marginRight="@dimen/space_tiny"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtLastMonthDue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_vsmall"
+                                android:background="@drawable/border_app_color"
+                                android:gravity="center"
+                                android:padding="@dimen/space_vsmall"
+                                android:textColor="@color/app_color"
+                                android:textSize="@dimen/text_xmedium"
+                                app:font_type_opensans="semibold" />
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtTotalDue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_vsmall"
+                                android:background="@drawable/border_text_color"
+                                android:gravity="center"
+                                android:padding="@dimen/space_vsmall"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_xmedium"
+                                app:font_type_opensans="semibold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_vsmall"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtPayOnline"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space_vsmall"
+                                android:layout_weight="1"
+                                android:background="@drawable/lite_corners_app_solid_app"
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:padding="@dimen/space_vsmall"
+                                android:text="@string/pay_online"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="semibold" />
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtRequestCollection"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space_vsmall"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_app_color"
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:padding="@dimen/space_vsmall"
+                                android:text="@string/request_collection"
+                                android:textColor="@color/app_color"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="semibold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linWallet2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_vsmall"
+                    app:cardCornerRadius="@dimen/space_vsmall"
+                    app:cardElevation="@dimen/space_tiny"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/space_vsmall">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_xsmall">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="Amount to be paid"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_xmedium"
+                            app:font_type_opensans="semibold" />
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtAmountToBePaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="@dimen/space_vsmall"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_xlarge"
+                            app:font_type_opensans="semibold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_vsmall"
+                    app:cardCornerRadius="@dimen/space_vsmall"
+                    app:cardElevation="@dimen/space_tiny"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/space_vsmall">
+
+                    <LinearLayout
+                        android:id="@+id/linSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_medium"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_xsmall"
+                        android:visibility="gone">
+
+                        <RadioGroup
+                            android:id="@+id/rgDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioTomorrow"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:padding="@dimen/space_vsmall"
+                                android:text="tomorrow"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_medium" />
+
+                            <RadioButton
+                                android:id="@+id/radioDayAfter"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/space_vsmall"
+                                android:text="day-after"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_medium" />
+
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_vsmall"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@+id/viewTomorrow"
+                                android:layout_width="0dp"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/color_black" />
+
+                            <View
+                                android:id="@+id/viewDayAfter"
+                                android:layout_width="0dp"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/color_light_grey" />
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/rgTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_vsmall"
+                            android:padding="@dimen/space_xsmall">
+
+                            <RadioButton
+                                android:id="@+id/radio7to8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/space_vsmall"
+                                android:text="7:00 AM - 8:00 AM"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_xsmall" />
+
+                            <RadioButton
+                                android:id="@+id/radio8to9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/space_vsmall"
+                                android:text="8:00 AM - 9:00 AM"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_xsmall" />
+
+                        </RadioGroup>
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtSchedulePickUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space_small"
+                            android:background="@drawable/lite_corners_app_solid_app"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="@dimen/space_vsmall"
+                            android:text="Schedule PickUp"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_medium"
+                            app:font_type_opensans="semibold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linCancelSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_medium"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_xsmall"
+                        android:visibility="gone">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtScheduleDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_small"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="@dimen/space_vsmall"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_xlarge"
+                            app:font_type_opensans="semibold" />
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtScheduleTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="@dimen/space_vsmall"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_large"
+                            app:font_type_opensans="semibold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_large" />
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtCancelSchedulePickUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space_small"
+                            android:background="@drawable/lite_corners_app_solid_app"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="@dimen/space_vsmall"
+                            android:text="Cancel PickUp"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/text_medium"
+                            app:font_type_opensans="semibold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space_large"
+                android:layout_marginBottom="@dimen/space_large"
+                android:background="@color/color_dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_15xlarge"
+                    android:layout_margin="@dimen/space_medium"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad_banner" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

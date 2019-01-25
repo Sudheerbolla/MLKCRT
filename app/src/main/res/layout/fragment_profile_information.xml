@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/border_lite_white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/imgProfileEdit"
+                    android:padding="@dimen/space_small"
+                    android:text="Personal Details"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <ImageView
+                    android:id="@+id/imgProfileEdit"
+                    android:layout_width="@dimen/space_xxxlarge"
+                    android:layout_height="@dimen/space_xxxlarge"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/space_small"
+                    android:src="@drawable/img_edit_app_color" />
+            </RelativeLayout>
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Name"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="User Name"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Email ID"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="user@gmail.com"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Mobile Number"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="9999999999"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/border_lite_white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.godavarisandroid.mystore.views.OpensansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/imgAddressEdit"
+                    android:padding="@dimen/space_small"
+                    android:text="Address"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_xmedium"
+                    app:font_type_opensans="regular" />
+
+                <ImageView
+                    android:id="@+id/imgAddressEdit"
+                    android:layout_width="@dimen/space_xxxlarge"
+                    android:layout_height="@dimen/space_xxxlarge"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/space_small"
+                    android:src="@drawable/img_edit_app_color" />
+            </RelativeLayout>
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="City"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Hyderabad"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Area"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Gachibowli"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Apartment/Society"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtApartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="L&amp;T"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Block"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="lilac"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Flat*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="409"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Street*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="road no 2"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Landmark*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="L&amp;T Apartments"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vsmall"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="Pin Code*"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="500032"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_vsmall"
+    android:layout_marginLeft="@dimen/space_vsmall"
+    android:layout_marginRight="@dimen/space_vsmall"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_lite_white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_vsmall">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="@dimen/item_delivery_size"
+                    android:layout_height="@dimen/item_delivery_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_vsmall"
+                    android:layout_toLeftOf="@+id/llRight"
+                    android:layout_toRightOf="@+id/imgProduct"
+                    android:orientation="vertical">
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="Product"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_medium"
+                        app:font_type_opensans="regular" />
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtSubCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="Sub Category"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_medium"
+                        android:visibility="gone"
+                        app:font_type_opensans="regular" />
+
+                    <com.godavarisandroid.mystore.views.OpensansTextView
+                        android:id="@+id/txtQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="Quantity"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/text_medium"
+                        app:font_type_opensans="regular" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <com.godavarisandroid.mystore.views.OpensansTextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:drawableLeft="@drawable/img_cart_grey"
+                            android:drawablePadding="@dimen/space_vsmall"
+                            android:inputType="text"
+                            android:text="100"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_medium"
+                            android:visibility="gone"
+                            app:font_type_opensans="regular" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical">
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Quantity:"
+                                android:textColor="@color/app_color"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="regular" />
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtQuantityCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:inputType="text"
+                                android:text="Quantity"
+                                android:textColor="@color/color_text"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical">
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Total Price:"
+                                android:textColor="@color/app_color"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="regular" />
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtTotalPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="text"
+                                android:text="20000"
+                                android:textColor="@color/color_text"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.4"
+                            android:orientation="vertical">
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Date:"
+                                android:textColor="@color/app_color"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="regular" />
+
+                            <com.godavarisandroid.mystore.views.OpensansTextView
+                                android:id="@+id/txtDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="text"
+                                android:text="22-08-2018"
+                                android:textColor="@color/color_text"
+                                android:textSize="@dimen/text_medium"
+                                app:font_type_opensans="regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_red"
+        android:padding="@dimen/space_vsmall">
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtRechargeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txtRecharge"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Your balance is low.\n please recharge to resume deliveries"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_11"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_marginRight="@dimen/space_small"
+            android:background="@drawable/home_button_selector"
+            android:inputType="text"
+            android:paddingLeft="@dimen/space_small"
+            android:paddingTop="@dimen/space_vsmall"
+            android:paddingRight="@dimen/space_small"
+            android:paddingBottom="@dimen/space_vsmall"
+            android:text="Recharge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="semibold" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relRecharge" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@id/topBar" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_color"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/rlProducts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_selector">
+
+            <ImageView
+                android:layout_width="@dimen/space_xmedium"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/txtProducts"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_products" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="Order"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_11"
+                app:font_type_opensans="regular" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSubscriptions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_selector">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/txtSubscriptions"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/my_subscriptions" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtSubscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="Subscriptions"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_11"
+                app:font_type_opensans="regular" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rlNextDelivery"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/home_button_selector">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/txtNextDelivery"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/img_next_delivery" />-->
+
+        <!--<com.godavarisandroid.mystore.views.OpensansTextView-->
+        <!--android:id="@+id/txtNextDelivery"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:gravity="center"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Next Delivery"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="@dimen/text_11"-->
+        <!--app:font_type_opensans="regular" />-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rlMyCalender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_selector">
+
+            <ImageView
+                android:layout_width="@dimen/space_xmedium"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/txtMyCalender"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_calender" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtMyCalender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="My Calendar"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_11"
+                app:font_type_opensans="regular" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_selector">
+
+            <ImageView
+                android:layout_width="@dimen/space_xmedium"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/txtMe"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_name" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="Me"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_11"
+                app:font_type_opensans="regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

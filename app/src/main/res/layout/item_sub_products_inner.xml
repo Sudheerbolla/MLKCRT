@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_vsmall"
+    android:layout_marginLeft="@dimen/space_vsmall"
+    android:layout_marginRight="@dimen/space_vsmall"
+    android:background="@drawable/border_lite_white"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_vsmall">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="@dimen/item_delivery_size"
+        android:layout_height="@dimen/item_delivery_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_vsmall"
+        android:layout_marginRight="@dimen/space_vsmall"
+        android:layout_toLeftOf="@+id/linButtons"
+        android:layout_toRightOf="@+id/imgProduct"
+        android:orientation="vertical">
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Tropicana 100% Juice"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Apple"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtQuantityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="1L"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="₹ 200.00"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_medium"
+            app:font_type_opensans="regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_vsmall"
+        android:orientation="vertical">
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_vsmall"
+            android:layout_marginTop="@dimen/space_small"
+            android:background="@drawable/corners_solid_app"
+            android:ems="5"
+            android:gravity="center"
+            android:padding="@dimen/space_vsmall"
+            android:text="Subscribe"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_xsmall"
+            app:font_type_opensans="regular" />
+
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtGetOnce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:background="@drawable/border_app_color"
+            android:ems="5"
+            android:gravity="center"
+            android:padding="@dimen/space_vsmall"
+            android:text="Get Once"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_xsmall"
+            app:font_type_opensans="regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>

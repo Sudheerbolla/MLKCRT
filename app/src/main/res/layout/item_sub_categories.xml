@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_vsmall"
+    android:background="@drawable/border_lite_white"
+    android:orientation="vertical"
+    android:padding="@dimen/space_small">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_xxxlarge"
+        android:layout_gravity="center"
+        android:src="@drawable/dummy1" />
+
+    <com.godavarisandroid.mystore.views.OpensansTextView
+        android:id="@+id/txtProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vsmall"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_xsmall"
+        app:font_type_opensans="regular" />
+</LinearLayout>

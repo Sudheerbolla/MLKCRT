@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_xlarge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linBottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="@dimen/space_vsmall"
+                android:text="Your Referral Code"
+                android:textAllCaps="true"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="semibold" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtReferralCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_small"
+                android:background="@drawable/border_app_color"
+                android:gravity="center"
+                android:inputType="text"
+                android:paddingLeft="@dimen/space_medium"
+                android:paddingTop="@dimen/space_vsmall"
+                android:paddingRight="@dimen/space_medium"
+                android:paddingBottom="@dimen/space_vsmall"
+                android:textAllCaps="true"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="semibold" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtReferralMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_large"
+                android:layout_marginTop="@dimen/space_small"
+                android:layout_marginRight="@dimen/space_large"
+                android:gravity="center"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_medium"
+                app:font_type_opensans="regular" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtInviteFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_small"
+                android:background="@drawable/corners_app_solid_app"
+                android:gravity="center"
+                android:inputType="text"
+                android:paddingLeft="@dimen/space_xmedium"
+                android:paddingTop="@dimen/space_vsmall"
+                android:paddingRight="@dimen/space_xmedium"
+                android:paddingBottom="@dimen/space_vsmall"
+                android:text="Invite Friend"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="semibold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_tiny"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_marginRight="@dimen/space_tiny"
+            android:background="@drawable/solid_app_color"
+            android:orientation="vertical">
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_small"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="Your Referral Points"
+                android:textAllCaps="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_large"
+                app:font_type_opensans="semibold" />
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtReferralPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="@dimen/space_small"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_xlarge"
+                app:font_type_opensans="semibold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

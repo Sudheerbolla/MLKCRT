@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/color_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
+        android:orientation="vertical">
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_xsmall"
+            android:text="Activate Subscription"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_xmedium"
+            app:font_type_opensans="regular" />
+
+        <com.godavarisandroid.mystore.views.OpensansTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_small"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_xmedium"
+            app:font_type_opensans="regular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:gravity="center">
+
+            <com.godavarisandroid.mystore.views.OpensansTextView
+                android:id="@+id/txtOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_small"
+                android:layout_marginTop="@dimen/space_small"
+                android:background="@drawable/corners_app_solid_app"
+                android:ems="4"
+                android:gravity="center"
+                android:padding="@dimen/space_vsmall"
+                android:text="OK"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_xmedium"
+                app:font_type_opensans="regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
